@@ -1,0 +1,158 @@
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #333;
+    color:#222;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* body{
+    margin:0;
+    display: flex;
+    align-items: center;
+ 
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+} */
+/* peoject 1 */
+/* .card_container{ 
+   
+ display: flex;
+ width: 90vw;
+
+
+    
+}
+.panel{
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    border-radius: 50px;
+    color:white;
+    cursor: pointer;
+    flex:0.5;
+    margin:10px;
+    position: relative;
+    transition: flex .9s ease-in-out;
+}
+.panel h4{
+    font-size: 20px;
+    position:absolute;
+    bottom:20px;
+    left:20px;  
+    margin:0;
+
+    
+}
+
+.panel.active{
+    flex:5
+}
+.panel.active h4{
+    opacity: 1 ;
+}
+
+@media (max-width:480px){
+
+    .container{
+        width:100vw;
+    }
+
+    .panel:nth-of-type(3),
+    .panel:nth-of-type(3){
+        display: none;
+    
+    }
+
+} */
+/* creating-step */
+/* project 2 */
+/* 
+.progress_container{
+    display: flex;
+    width:400px;
+    position:relative;
+ 
+    justify-content: space-between;
+}
+.progress_container::before{
+    content:'';
+    background:#999;
+    position:absolute;
+    height:4px;
+    top:50%;
+    transform: translateY(-50%);
+    left:0; 
+    width: 100%;
+    z-index: -1;
+    transition: 0.5s ease;
+     
+}
+
+.progress{
+  
+    background:#3498db;
+    position:absolute;
+    height:4px;
+    top:50%;
+    transform: translateY(-50%);
+    left:0; 
+    width:0%;
+    z-index: -1;
+    transition: 0.5s ease;
+
+}
+
+
+
+.circle{
+    color:#999;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:3px solid #888;
+}
+
+.circle.active{
+    border: 3px solid #3498db;
+}
+
+.change_btn{
+    margin-top:30px;
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    border: 0;
+    width:70px;
+    height:30px;
+    border-radius: 10px;
+    color:white;
+    cursor: pointer;
+ 
+}
+
+.btn_prev{
+   
+background-color:red
+}
+
+.btn_next{
+ background-color:blue 
+}
+
+.btn_disabled{
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: #777;
+} */
+
+/* project 3 */

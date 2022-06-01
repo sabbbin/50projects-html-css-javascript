@@ -1,0 +1,87 @@
+
+.container{ 
+    background-color: white;
+    transform-origin: top left;
+    transition: transform 1s linear;
+
+    min-height: 100vh;
+    padding:5rem;
+    position: relative;
+}
+
+
+.show_nav  {
+    transform:rotate(-20deg) 
+}  
+
+.disabled_btn{
+    cursor: not-allowed;
+    visibility: hidden;
+}
+
+
+.circle_container{
+    position:fixed;
+    top:-100px;
+    left:-100px;
+
+}
+.circle{
+    background-color: #ff7979;
+    height:200px;
+    width:200px;
+    border-radius: 50%;   
+    position: relative;
+    transition: transform 0.5s linear;
+}
+
+.circle button{
+    position: absolute;
+    top:50%;
+    left:50%;
+    height:60px;
+    background:transparent;
+    border:0;
+    font-size:26px
+}  
+.circle button:focus{
+    outline:none;
+}
+
+
+
+.content img{
+    min-width: 100%;
+  
+}
+
+nav{
+    position:fixed;
+    left:-250px;
+    bottom:240px;
+    transform:rotate(20deg)
+
+}
+nav ul{
+    list-style-type: none;
+    color:white
+}
+
+nav ul li{
+    padding:0.5rem;
+    text-transform: uppercase;
+  
+}
+nav ul li i{
+ font-size:15px;
+ margin-right: 20px;
+}
+
+nav ul li +li{  
+    margin-left:15px;
+   
+}
+nav ul li+li+li{
+    margin-left: 25px;
+    
+}

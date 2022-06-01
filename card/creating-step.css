@@ -1,0 +1,83 @@
+
+.progress_container{
+    display: flex;
+    width:400px;
+    position:relative;
+ 
+    justify-content: space-between;
+}
+.progress_container::before{
+    content:'';
+    background:#999;
+    position:absolute;
+    height:4px;
+    top:50%;
+    transform: translateY(-50%);
+    left:0; 
+    width: 100%;
+    z-index: -1;
+    transition: 0.5s ease;
+     
+}
+
+.progress{
+  
+    background:#3498db;
+    position:absolute;
+    height:4px;
+    top:50%;
+    transform: translateY(-50%);
+    left:0; 
+    width:0%;
+    z-index: -1;
+    transition: 0.5s ease;
+
+}
+
+
+
+.circle{
+    color:#999;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:3px solid #888;
+}
+
+.circle.active{
+    border: 3px solid #3498db;
+}
+
+.change_btn{
+    margin-top:30px;
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    border: 0;
+    width:70px;
+    height:30px;
+    border-radius: 10px;
+    color:white;
+    cursor: pointer;
+ 
+}
+
+.btn_prev{
+   
+background-color:red
+}
+
+.btn_next{
+ background-color:blue 
+}
+
+.btn_disabled{
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: #777;
+} 
