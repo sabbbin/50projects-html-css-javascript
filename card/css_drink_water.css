@@ -1,0 +1,53 @@
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.wrapper{
+ padding:5px 12px;
+ width: 500px;
+
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ justify-content: center;
+}
+
+.total_water{
+    height: 350px;
+    width: 200px;
+    margin: auto;
+    background-color: white;
+    border-radius: 0px 0px 90px 90px ;
+    border: 3px solid blue;
+  
+}
+
+.sub_total{
+    width: 400px;
+}
+
+.small_btn{
+     display: inline-block;
+     margin:4px 10px;
+     width: 50px;
+    height: 100px;
+    border-radius: 0px 0px 90px 90px ;
+
+}
+
+.btn_active{
+    background-color: blueviolet;
+}
