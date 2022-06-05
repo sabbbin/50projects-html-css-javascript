@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    padding:2rem;
+   
+    margin: 2rem;
+   
+}
+
+.card{
+    width: 770px;
+     background-color:lightcoral;    
+     padding: 2rem;
+     margin: 9px; 
+     border-radius: 20px;
+     position: relative;
+  
+     transition: height 22s ease;
+}
+
+h6{
+    display: none;
+}
+.card i{
+    cursor: pointer;
+    position: absolute;
+    right:25px;
+    top:15px;
+    border:0;
+    background-color: transparent;
+}
+
+.card_active .show{
+    display: none;
+}
+
+
+.card_active h6{
+    height: 50px;
+    display: block;
+}
+
+.close{
+    display: none;
+}
+.card_active .close{
+    display:block !important
+}
