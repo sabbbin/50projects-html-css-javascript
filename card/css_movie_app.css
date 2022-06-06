@@ -1,0 +1,102 @@
+body{
+    padding:0;
+    margin: 0;
+}
+
+.container{
+  
+    background-color: aquamarine;
+    position: relative;
+    padding:10px 20px;
+}
+
+.header{
+     
+    padding: 5px;
+    margin:3px;
+    width: 100%;
+   
+}
+
+form{
+ display: flex;
+ justify-content: flex-end;
+ margin-right: 50px;
+}
+
+.search_box{
+    border: 0;
+    height: 26px;
+    width: 200px;
+    font-size: 16px;
+    padding:3px 6px;
+    border-radius: 10px;
+}
+.search_box:focus{
+    outline: 0;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    padding:10px 20px;
+}
+
+
+.card{
+    height: 280px;
+    width: 300px;
+    overflow: hidden;
+    border: 3px solid beige;
+    padding:4px 15px;
+    background-color: bisque;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.card_header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.movie_title{
+    font-size: 24px;
+    font-weight: 500;
+}
+.movie_rating{
+   
+    height: 20px;
+    width: 30px;
+    background-color: black;
+    color:white;
+    padding-top: 0.3rem;
+   border-radius: 50%;
+    font-size: 14px;
+  
+}
+img{
+    width:100%;
+ 
+    
+}
+.card_body{
+ 
+    padding:5px;
+    font-size: 15px;
+    max-height: 100%;
+    position: absolute;
+    top:0;    
+    left: 0;
+    bottom: 0 ;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+    background-color: aliceblue;
+
+}
+.card:hover .card_body{
+   transform: translateY(0) !important;
+}
