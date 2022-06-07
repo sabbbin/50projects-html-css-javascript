@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css_drawing_app.css" rel="stylesheet">
+    <title>Drawing App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <canvas
+             class="canvas">
+
+            </canvas>
+            <div class="toolbar">
+                 <div class="drawing_control">
+
+                     <i class="fa-solid fa-plus"></i>
+                     <label class="brush_size"> 20</label>
+                     <i class="fa-solid fa-minus"></i>
+                         <label>
+                            select  Color
+                             <input class="color" type="color"/> 
+                         </label>
+                 </div>
+               
+
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="js_drawing_app.js"></script>
+</body>
+</html>
