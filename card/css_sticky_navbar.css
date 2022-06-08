@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.container{
+    align-items: center;
+    background-color: red;
+ 
+    width: 100vw;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    height: 50px;
+    padding: 0 40px;
+   top:0;
+   left:0;
+   right:0;
+    position: fixed;
+    transition: all 0.9s ease-in-out ;
+    
+   
+}
+
+.nav.active{
+
+    background-color: aliceblue;
+    box-shadow: 0 2x 10px rgba(0,0,0,0.3);
+}
+.nav.active a{
+    color:black;
+}
+.nav.active a:hover{
+    color:gray;
+    font-weight: bold;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+  
+}
+
+.nav ul li{
+    margin-left: 10px;
+
+}
+
+.nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+.nav ul li a:hover{
+    color:bisque;
+}
+
+.welcome{
+    margin: 0;
+    padding:0;
+    height: 600px;
+    color:green;
+    background-image: url('../img/background1.jpeg');
+    background-repeat: none;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.welcome h2{
+    font-size: 70px;
+}
+
+.about,
+.about1
+{
+    padding:10px 100px
+}
