@@ -1,0 +1,75 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+
+    height: 400px;
+    width: 400px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.contain::after, .contain::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    position: absolute;
+    left:60px;
+    top:60px;
+    transform-origin: top;
+   animation: half 2s linear  infinite 0.353s;
+    
+    
+}
+.contain::before{
+  animation: abc 2s linear infinite ;
+ 
+}
+
+@keyframes half {
+    0%,25%{
+        transform: rotate(0deg);
+    }
+    50%,75%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes abc{
+    0%,25%{
+        transform: rotate(180deg);
+    }
+    50%,75%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(540deg);
+    }
+}
