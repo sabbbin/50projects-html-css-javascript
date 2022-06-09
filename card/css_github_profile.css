@@ -1,0 +1,120 @@
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+.container{
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    height: 400px;
+    width: 60%;
+    background-color: darkblue; 
+    border-radius: 40px;
+    
+
+}
+
+.user_search{
+    padding:10px 35px;
+  
+}
+
+.user_search input{
+    height: 45px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+.user_search input:focus{
+    outline: none;
+}
+
+.user_profile{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+    color: white;
+}
+
+.user_profile img{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    margin: 10px 10px 0px 0px;
+}
+
+.user_info{
+    margin: 30px;
+}
+
+.user_info h4{
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-bottom: 0px;
+
+}
+
+.user_info p{
+    font-weight: 400;
+    margin-bottom: 17px;
+    color:lightblue
+}
+
+.user_repo ul{
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+
+   
+}
+
+.user_repo ul li{
+    display: inline-block;
+ 
+    margin-right: 7px;
+}
+.user_project ul{
+    list-style-type: none;
+    padding: 0;
+
+
+}
+.user_project ul li{
+    display: inline-block;
+    margin-right: 10px;
+    background-color: lightblue;
+    border-radius: 20px;
+    padding: 2px 15px;
+    margin-top: 8px;
+}
+
+.user_project ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width=900) {
+    .wrapper{
+        height: 600px;
+    }
+    .user_profile{
+        flex-direction: column;
+    }
+}
