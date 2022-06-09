@@ -1,0 +1,63 @@
+
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+   
+}
+
+.img{
+    height: 300px;
+    width: 400px;
+    background-color: red;
+    position: relative;
+ 
+}
+.img img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.heart {
+    background-color: rebeccapurple;
+
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    
+    animation:  grow 3s linear;
+    transform: rotate(45deg) ;
+    
+}
+
+@keyframes grow {
+    to{
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.heart::before,
+.heart::after{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    content: '';
+    background-color: rebeccapurple;
+    border-radius: 50%;
+   
+}
+
+.heart::before{
+    left:-25px;
+}
+.heart::after{
+    top: -25px;
+}
