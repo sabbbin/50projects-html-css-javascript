@@ -58,6 +58,7 @@ body{
     width: 150px;
     border-radius: 20px;
     margin: 10px 10px 0px 0px;
+    border: 7px solid  lightblue;
 }
 
 .user_info{
