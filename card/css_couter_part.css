@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+    margin:0;
+    
+}
+
+.container{
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+span{
+    font-size: 44px;
+    color: blue;
+    display: none;
+}
+
+span.active{
+    display: block;
+
+      animation: jpt 5s ease-out;
+
+}
+
+@keyframes jpt {
+    0%{
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+
+    1000%{
+        transform: translateX(-30px);
+        opacity: 1;
+    }
+
+  
+}
+
+h5{
+    font-size: 21px;
+         margin-bottom: 8px;
+}
+button{
+    height: 30px;
+    width: 80px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(1.1);
+}
+
+.toggle{
+    display: none;
+}
