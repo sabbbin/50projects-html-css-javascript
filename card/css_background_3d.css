@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding:0;
+    margin:0;
+    background-color: antiquewhite;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    height: 500px;
+    width: 500px;
+    background-color: rebeccapurple;
+    border-radius: 20px;
+}
+
+.boxes{
+     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:20px;
+    position: relative;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    background-image: url("../img/giphy.gif");
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+ 
+  
+}
+
+.btn{
+    height: 35px;
+    width: 80px;
+    margin-bottom:10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color:lightblue;
+    color:red;
+    border: 0;
+    cursor: pointer;
+}
+
+.boxes.active .box{
+    box-shadow: 5px 9px red;
+    margin: 6px;
+}
