@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper{
+    width: 600px;
+    background-color: red;
+    padding:25px;
+    border-radius: 30px;
+    position: relative;
+   
+}
+.testimonial{
+   
+    justify-content: center;
+    padding: 0px 20px;
+ margin: 10px auto;
+ display: none;
+}
+
+.active{
+    display: block;
+}
+
+.wrapper::before{
+    content: '';
+    height: 5px;
+    width: 90%;
+    top:16px;
+    background-color: antiquewhite;
+    position: absolute;
+    border-radius: 30px;
+}
+
+.testimonial p{
+    
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.user_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_img{
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      margin-right: 10px;
+}
+
+.fa-solid{
+    position:absolute;
+    top:20px;
+    font-size: 40px;
+    color:bisque;
+    font-weight: 600;
+}
+.fa-quote-right{
+    left:2px;
+}
+.fa-quote-left{
+    right:2px
+}
+
+.progressbar{
+    height: 5px;
+    width: 0px;
+    background-color: blue;
+    position: relative;
+    top:-9px;
+    border-radius: 50px;
+    animation: swipe 7s infinite;
+  
+}
+@keyframes swipe {
+    0%{
+        width: 0%;
+    }
+  
+    100%{
+        width: 100%;
+    }
+}
