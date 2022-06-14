@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css_quize.css" rel="stylesheet">
+    <title>Quize App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="qns active">
+                <h4>Which is domestic Animals?</h4>
+                <div class="radio_group">
+                    <label>
+                        <input type="checkbox"> cow
+                    </label>
+                    <label>
+                        <input type="checkbox"> tiger
+                    </label>
+                    <label>
+                        <input type="checkbox"> lion
+                    </label>
+                    <label>
+                        <input type="checkbox"> dianosour
+                    </label>
+
+
+                </div>
+            </div>
+            <div class="qns ">
+                <h4>Which is wild Animals?</h4>
+                <div class="radio_group">
+                    <label>
+                        <input type="checkbox"> snake
+                    </label>
+                    <label>
+                        <input type="checkbox"> buffalo
+                    </label>
+                    <label>
+                        <input type="checkbox"> cat
+                    </label>
+                    <label>
+                        <input type="checkbox"> lion
+                    </label>
+
+
+                </div>
+            </div>
+            <div class="qns ">
+                <h4>Which is not object-oriented programming?</h4>
+                <div class="radio_group">
+                    <label>
+                        <input type="checkbox"> c
+                    </label>
+                    <label>
+                        <input type="checkbox"> python
+                    </label>
+                    <label>
+                        <input type="checkbox"> java
+                    </label>
+                    <label>
+                        <input type="checkbox"> c#
+                    </label>
+
+
+                </div>
+            </div>
+            <div class="qns ">
+                 <div class="result">
+
+                     <h4 class="result_title">You have successfully submitted</h4>
+                     <i class="fa-solid fa-xmark close_btn"></i>
+                 </div>
+                 <h5 class="result_ans">You have score 34%</h5>
+            </div>
+
+
+            <button class="btn btn_submit " disabled>Submit</button>
+            <button class="btn btn_reload hidden" >Reload</button>
+
+
+        </div>
+
+    </div>
+    <script src="js_quize.js"></script>
+</body>
+
+</html>
